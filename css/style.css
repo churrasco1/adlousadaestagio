@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
 
 *{
+	
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -28,17 +29,38 @@
 }
 
 #menu li a:hover{
-	color: gainsboro;
+	background-color: black;
+}
+
+#menu ul li:last-child a{
+	float: right;
+	background-color: black;
 }
 
 .container {
-  min-height: 100vh;
+  min-height: 50vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 100px 0;
-  background-color: #FFFFFF;
+  background-color: white;
+}
+.container1 {
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: red;
+}
+#p1 {
+	color: white;
+	background-color: black;
+	height: 45px;
+	text-align: center;
+	font-size: 37px;
 }
 .timeline {
   width: 80%;
@@ -53,8 +75,8 @@
 }
 .timeline ul li {
   padding: 20px;
-  background-color: #EBEBEB;
-  color: black;
+  background-color: #2E2929;
+  color: white;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -80,6 +102,7 @@
   letter-spacing: 2px;
   left: 120%;
   margin-top: 6.5%;
+  color: black;
 }
 
 .timeline-content .date1 {
@@ -89,7 +112,7 @@
   letter-spacing: 2px;
   right: 120%;
   margin-top: 6.5%;
- 
+  color: black;
 }
 
 
@@ -100,9 +123,9 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 2px;
+    width: 3px;
     height: 100%;
-    background-color: gray;
+    background-color: black;
   }
   .timeline ul li {
     width: 50%;
@@ -127,7 +150,7 @@
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: gray;
+    background-color: black;
     top: 0px;
   }
   .timeline ul li:nth-child(odd)::before {
@@ -155,12 +178,12 @@
   }
 }
 
-#tooltip_1{
+#tooltip_esquerda{
 	position: absolute;
 	top: -5px;
-    right: 103%;  
-	background-color: #EBEBEB;
-	color: black;
+    right: 104%;  
+	background-color: black;
+	color: white;
 	white-space: nowrap;
 	padding: 10px 15px;
 	border-radius: 10px;
@@ -170,7 +193,7 @@
 	
 }
 
-#tooltip_1::before{
+#tooltip_esquerda::before{
 	content: " ";
   	position: absolute;
   	top: 20%;
@@ -178,21 +201,21 @@
   	margin-top: -5px;
   	border-width: 12px;
   	border-style: solid;
-  	border-color: transparent transparent transparent #EBEBEB;
+  	border-color: transparent transparent transparent black;
 }
 
-.timeline ul li:hover #tooltip_1{
+.timeline ul li:hover #tooltip_esquerda{
 	top: 0%;
 	visibility: visible;
 	opacity: 1;
 }
 
-#tooltip_2{
+#tooltip_direita{
 	position: absolute;
 	top: -5px;
-    left: 103%;  
-	background-color: #EBEBEB;
-	color: black;
+    left: 104%;  
+	background-color: black;
+	color: white;
 	white-space: nowrap;
 	padding: 10px 15px;
 	border-radius: 10px;
@@ -202,7 +225,7 @@
 	
 }
 
-#tooltip_2::before{
+#tooltip_direita::before{
 	content: " ";
     position: absolute;
 	top: 15%;
@@ -210,78 +233,15 @@
     margin-top: -5px;
     border-width: 12px;
     border-style: solid;
-    border-color: transparent #EBEBEB transparent transparent;
+    border-color: transparent black transparent transparent;
 }
 
-.timeline ul li:hover #tooltip_2{
+.timeline ul li:hover #tooltip_direita{
 	top: 0%;
 	visibility: visible;
 	opacity: 1;
 }
 
-
-#tooltip_3{
-	position: absolute;
-	top: -5px;
-    right: 103%;  
-	background-color: #EBEBEB;
-	color: black;
-	white-space: nowrap;
-	padding: 10px 15px;
-	border-radius: 10px;
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 0.5s ease;
-	
-}
-
-#tooltip_3::before{
-	content: " ";
-  	position: absolute;
-  	top: 50%;
-  	left: 100%; 
-  	margin-top: -5px;
-  	border-width: 12px;
-  	border-style: solid;
-  	border-color: transparent transparent transparent #EBEBEB;
-}
-
-.timeline ul li:hover #tooltip_3{
-	top: 0%;
-	visibility: visible;
-	opacity: 1;
-}
-
-#tooltip_4{
-	position: absolute;
-	top: -5px;
-    left: 103%;  
-	background-color: #EBEBEB;
-	color: black;
-	white-space: nowrap;
-	padding: 10px 15px;
-	border-radius: 10px;
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 0.5s ease;
-}
-
-#tooltip_4::before{
-	content: " ";
-    position: absolute;
-	top: 50%;
-    right: 100%; 
-    margin-top: -5px;
-    border-width: 12px;
-    border-style: solid;
-    border-color: transparent #EBEBEB transparent transparent;
-}
-
-.timeline ul li:hover #tooltip_4{
-	top: -70%;
-	visibility: visible;
-	opacity: 1;
-}
 
 #afporto{
 	color: black;
@@ -289,7 +249,7 @@
 }
 
 #pedrovilaca {
-	color: black;
+	color: white;
 }
 
 #pedrovilaca:hover{
@@ -355,3 +315,9 @@ td, th {
 tr:nth-child(even) {
   background-color: #DCDCDC;
 }
+
+#carreira{
+	margin-left: 50px;
+}
+
+
