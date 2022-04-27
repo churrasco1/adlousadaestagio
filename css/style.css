@@ -96,23 +96,25 @@
 }
 
 .timeline-content .date {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   margin-bottom: 10px;
   letter-spacing: 2px;
   left: 120%;
   margin-top: 6.5%;
   color: black;
+  font-weight: bold;
 }
 
 .timeline-content .date1 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   margin-bottom: 10px;
   letter-spacing: 2px;
   right: 120%;
   margin-top: 6.5%;
   color: black;
+  font-weight: bold;
 }
 
 
@@ -174,7 +176,7 @@
   }
 	
   .timeline ul li:hover::before {
-    background-color: red;
+    background-color: black;
   }
 }
 
